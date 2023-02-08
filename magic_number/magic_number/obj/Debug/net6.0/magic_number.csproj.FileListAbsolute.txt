@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\bin\Debug\net6.0\magic_number.exe
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\bin\Debug\net6.0\magic_number.deps.json
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\bin\Debug\net6.0\magic_number.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\bin\Debug\net6.0\magic_number.dll
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\bin\Debug\net6.0\magic_number.pdb
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.dll
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\refint\magic_number.dll
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.pdb
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\magic_number.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\magic_number\magic_number\obj\Debug\net6.0\ref\magic_number.dll

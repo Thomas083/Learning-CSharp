@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\bin\Debug\net6.0\firstProgram.exe
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\bin\Debug\net6.0\firstProgram.deps.json
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\bin\Debug\net6.0\firstProgram.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\bin\Debug\net6.0\firstProgram.dll
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\bin\Debug\net6.0\firstProgram.pdb
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.dll
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\refint\firstProgram.dll
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.pdb
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\firstProgram.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\firstProgram\firstProgram\obj\Debug\net6.0\ref\firstProgram.dll

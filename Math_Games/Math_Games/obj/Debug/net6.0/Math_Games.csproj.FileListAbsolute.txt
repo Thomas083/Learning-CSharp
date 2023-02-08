@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\bin\Debug\net6.0\Math_Games.exe
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\bin\Debug\net6.0\Math_Games.deps.json
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\bin\Debug\net6.0\Math_Games.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\bin\Debug\net6.0\Math_Games.dll
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\bin\Debug\net6.0\Math_Games.pdb
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.dll
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\refint\Math_Games.dll
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.pdb
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\Math_Games.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\Math_Games\Math_Games\obj\Debug\net6.0\ref\Math_Games.dll
