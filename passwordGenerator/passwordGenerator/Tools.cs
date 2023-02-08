@@ -16,6 +16,7 @@ namespace FormationCS
                 return number;
             }
             Console.WriteLine("ERREUR : Le nombre doit être strictement positif");
+            Console.WriteLine();
 
             return CheckNumberPositive(question);
         }
@@ -28,6 +29,7 @@ namespace FormationCS
                 return number;
             }
             Console.WriteLine("ERREUR : Le nombre doit être entre" + min + "et" + max);
+            Console.WriteLine();
 
             return CheckNumberBetween(question, min, max);
         }
@@ -46,6 +48,7 @@ namespace FormationCS
                 catch
                 {
                     Console.WriteLine("ERREUR UNIQUEMENT DES NOMBRES");
+                    Console.WriteLine();
                 }
             }
         }
