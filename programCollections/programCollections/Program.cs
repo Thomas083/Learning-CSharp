@@ -208,12 +208,35 @@ namespace programCollections
 
         }
 
+        static void ForEachLoop()
+        {
+            /*var names = new string[] { "toto", "jean", "pierre" };
+            var names = new List<string>() { "toto", "jean", "pierre" };
+
+            foreach (var name in names)
+            {
+                Console.WriteLine(name);
+            }*/
+
+            var dictionary = new Dictionary<string, string>();
+            dictionary.Add("Jean", "0630549630");
+            dictionary.Add("Marie", "0760489530");
+            dictionary["Martin"] = "0684230157";
+            dictionary["Toto"] = "0756301694";
+
+            foreach(var item in dictionary)
+            {
+                Console.WriteLine("Nom : " +  item.Key + " Numéro de téléphone : " + item.Value);
+            }
+        }
+
         static void Main(string[] args)
         {
             /*Array();
             List();
-            ListOfList();*/
-            DictionaryLearn();
+            ListOfList();
+            DictionaryLearn();*/
+            ForEachLoop();
         }
     }
 }
