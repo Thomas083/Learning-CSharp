@@ -62,9 +62,52 @@
             ShowMinValue(firstArray);
         }
 
+        static void ShowList(List<string> list)
+        {
+            for(int i = 0; i<list.Count; i++ )
+            {
+                Console.WriteLine(list[i]);
+            }
+        }
+
+        static void List()
+        {
+           /* List<int> ints= new List<int>();
+
+            ints.Add(0);
+            ints.Add(1);
+            ints.Add(2);*/
+
+            List<string> list = new List<string>();
+            while(true)
+            {
+                Console.Write("Rentrez un nom (ENTER pour finir) : ");
+                string name = Console.ReadLine();
+
+
+                if (name == "")
+                {
+                    break;
+                }
+
+                if(list.Contains(name))
+                {
+                    Console.WriteLine("Erreur, ce nom est déjà dans la liste");
+                    Console.WriteLine();
+                } else
+                {
+                    list.Add(name);
+                }
+
+            }
+
+            ShowList(list);
+        }
+
         static void Main(string[] args)
         {
-            Array();
+            /*Array();*/
+            List();
         }
     }
 }
