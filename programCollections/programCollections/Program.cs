@@ -143,10 +143,27 @@ namespace programCollections
              }
  */
 
-            var firstList = new List<string>() { "Paul", "jean", "pierre", "emilie", "martin" };
+
+            var country = new List<List<string>>();
+            country.Add(new List<string>() { "France", "Paris", "Toulouse", "Bordeaux", "Lille"});
+            country.Add(new List<string>() { "USA", "New-York", "Chicago", "Los Angeles", "San Francisco" });
+            country.Add(new List<string>() { "Italie", "Venise", "Florence", "Milan", "Pise" });
+
+            for(int i = 0; i< country.Count;i++)
+            {
+                var numberCity = country[i];
+                Console.WriteLine(numberCity[0] + " - " + (numberCity.Count-1) + " villes");
+                for(int j = 1; j < numberCity.Count; j++)
+                {
+                    Console.WriteLine("  " + numberCity[j]);
+                }
+            }
+            
+
+            /*var firstList = new List<string>() { "Paul", "jean", "pierre", "emilie", "martin" };
             var secondList = new List<string>() { "Sophie", "jean", "martin", "toto" };
 
-            ShowCommonElement(firstList, secondList);
+            ShowCommonElement(firstList, secondList);*/
 
             /*ShowList(list, true);*/
         }
