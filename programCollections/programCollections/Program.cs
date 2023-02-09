@@ -102,76 +102,118 @@ namespace programCollections
             }
         }
 
-        static void List()
+        static void ListOfList()
         {
-            /* List<int> ints= new List<int>();
-
-             ints.Add(0);
-             ints.Add(1);
-             ints.Add(2);*/
-
-            /* List<string> list = new List<string>();
-             while(true)
-             {
-                 Console.Write("Rentrez un nom (ENTER pour finir) : ");
-                 string names = Console.ReadLine();
-
-
-                 if (names == "")
-                 {
-                     break;
-                 }
-
-                 if(list.Contains(names))
-                 {
-                     Console.WriteLine("Erreur, ce nom est déjà dans la liste");
-                     Console.WriteLine();
-                 } else
-                 {
-                     list.Add(names);
-                 }
-
-             }
-
-             for (int i = list.Count - 1; i >= 0; i--)
-             {
-                 string name = list[i];
-                 if(name[name.Length-1] == 'e')
-                 {
-                     list.RemoveAt(i);
-                 }
-             }
- */
-
-
             var country = new List<List<string>>();
-            country.Add(new List<string>() { "France", "Paris", "Toulouse", "Bordeaux", "Lille"});
+            country.Add(new List<string>() { "France", "Paris", "Toulouse", "Bordeaux", "Lille" });
             country.Add(new List<string>() { "USA", "New-York", "Chicago", "Los Angeles", "San Francisco" });
             country.Add(new List<string>() { "Italie", "Venise", "Florence", "Milan", "Pise" });
 
-            for(int i = 0; i< country.Count;i++)
+            for (int i = 0; i < country.Count; i++)
             {
                 var numberCity = country[i];
-                Console.WriteLine(numberCity[0] + " - " + (numberCity.Count-1) + " villes");
-                for(int j = 1; j < numberCity.Count; j++)
+                Console.WriteLine(numberCity[0] + " - " + (numberCity.Count - 1) + " villes");
+                for (int j = 1; j < numberCity.Count; j++)
                 {
                     Console.WriteLine("  " + numberCity[j]);
                 }
             }
-            
+        }
 
-            /*var firstList = new List<string>() { "Paul", "jean", "pierre", "emilie", "martin" };
+        static void List()
+        {
+            List<int> ints = new List<int>();
+
+            ints.Add(0);
+            ints.Add(1);
+            ints.Add(2);
+
+            List<string> list = new List<string>();
+            while (true)
+            {
+                Console.Write("Rentrez un nom (ENTER pour finir) : ");
+                string names = Console.ReadLine();
+
+
+                if (names == "")
+                {
+                    break;
+                }
+
+                if (list.Contains(names))
+                {
+                    Console.WriteLine("Erreur, ce nom est déjà dans la liste");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    list.Add(names);
+                }
+
+            }
+
+            for (int i = list.Count - 1; i >= 0; i--)
+            {
+                string name = list[i];
+                if (name[name.Length - 1] == 'e')
+                {
+                    list.RemoveAt(i);
+                }
+            }
+
+
+
+
+
+            var firstList = new List<string>() { "Paul", "jean", "pierre", "emilie", "martin" };
             var secondList = new List<string>() { "Sophie", "jean", "martin", "toto" };
 
-            ShowCommonElement(firstList, secondList);*/
+            ShowCommonElement(firstList, secondList);
 
-            /*ShowList(list, true);*/
+            ShowList(list, true);
+        }
+
+        static void DictionaryLearn()
+        {
+            var dictionary = new Dictionary<string, string>();
+            dictionary.Add("Jean", "0630549630");
+            dictionary.Add("Marie", "0760489530");
+            dictionary["Martin"] = "0684230157";
+            dictionary["Toto"] = "0756301694";
+            string searchingSomeone = Console.ReadLine();
+
+            if(dictionary.ContainsKey(searchingSomeone))
+            {
+                Console.WriteLine(dictionary[searchingSomeone]);
+            }
+            else
+            {
+                Console.WriteLine("Cette personne n'a pas été trouvée");
+            }
+
+
+            /*var listArray = new List<string[]>();
+            listArray.Add(new string[] { "Jean", "0630549630" });
+            listArray.Add(new string[] { "Marie", "0760489530" });
+            listArray.Add(new string[] { "Martin", "0684230157" });
+            listArray.Add(new string[] { "toto", "0756301694" });
+
+            for(int i = 0; i < listArray.Count; i++)
+            {
+                if (listArray[i][0] == searchingSomeone)
+                {
+                    Console.WriteLine(listArray[i][1]);
+                }
+            }*/
+
         }
 
         static void Main(string[] args)
         {
-            /*Array();*/
+            /*Array();
             List();
+            ListOfList();*/
+            DictionaryLearn();
         }
     }
 }
