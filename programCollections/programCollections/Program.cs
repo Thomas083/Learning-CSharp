@@ -1,4 +1,6 @@
-﻿namespace programCollections
+﻿using System.Runtime.Serialization;
+
+namespace programCollections
 {
     internal class Program
     {
@@ -62,46 +64,91 @@
             ShowMinValue(firstArray);
         }
 
-        static void ShowList(List<string> list)
+        static void ShowList(List<string> list, bool orderDesc = false)
         {
-            for(int i = 0; i<list.Count; i++ )
+            if(orderDesc)
             {
-                Console.WriteLine(list[i]);
+                for (int i = list.Count-1; i >= 0; i--)
+                {
+                    Console.WriteLine(list[i]);
+                }
+            }
+            else
+            {
+                for(int i = 0; i<list.Count; i++ )
+                {
+                    Console.WriteLine(list[i]);
+                }
+            }
+            string nameMax = list[0];
+            for(int i = 0; i < list.Count; i++)
+            {
+                if (list[i].Length > nameMax.Length)
+                {
+                    nameMax= list[i];
+                }
+            }
+            Console.WriteLine("Le nom le plus grand est : " + nameMax);
+        }
+        static void ShowCommonElement(List<string> firstList, List<string> secondList)
+        {
+            for(int i = 0; firstList.Count > i; i++)
+            {
+                string nameFirstList = firstList[i];
+                if(secondList.Contains(nameFirstList))
+                {
+                    Console.WriteLine(nameFirstList);
+                }
             }
         }
 
         static void List()
         {
-           /* List<int> ints= new List<int>();
+            /* List<int> ints= new List<int>();
 
-            ints.Add(0);
-            ints.Add(1);
-            ints.Add(2);*/
+             ints.Add(0);
+             ints.Add(1);
+             ints.Add(2);*/
 
-            List<string> list = new List<string>();
-            while(true)
-            {
-                Console.Write("Rentrez un nom (ENTER pour finir) : ");
-                string name = Console.ReadLine();
+            /* List<string> list = new List<string>();
+             while(true)
+             {
+                 Console.Write("Rentrez un nom (ENTER pour finir) : ");
+                 string names = Console.ReadLine();
 
 
-                if (name == "")
-                {
-                    break;
-                }
+                 if (names == "")
+                 {
+                     break;
+                 }
 
-                if(list.Contains(name))
-                {
-                    Console.WriteLine("Erreur, ce nom est déjà dans la liste");
-                    Console.WriteLine();
-                } else
-                {
-                    list.Add(name);
-                }
+                 if(list.Contains(names))
+                 {
+                     Console.WriteLine("Erreur, ce nom est déjà dans la liste");
+                     Console.WriteLine();
+                 } else
+                 {
+                     list.Add(names);
+                 }
 
-            }
+             }
 
-            ShowList(list);
+             for (int i = list.Count - 1; i >= 0; i--)
+             {
+                 string name = list[i];
+                 if(name[name.Length-1] == 'e')
+                 {
+                     list.RemoveAt(i);
+                 }
+             }
+ */
+
+            var firstList = new List<string>() { "Paul", "jean", "pierre", "emilie", "martin" };
+            var secondList = new List<string>() { "Sophie", "jean", "martin", "toto" };
+
+            ShowCommonElement(firstList, secondList);
+
+            /*ShowList(list, true);*/
         }
 
         static void Main(string[] args)
