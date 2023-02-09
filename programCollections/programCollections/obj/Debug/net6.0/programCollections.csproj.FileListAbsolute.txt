@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\bin\Debug\net6.0\programCollections.exe
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\bin\Debug\net6.0\programCollections.deps.json
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\bin\Debug\net6.0\programCollections.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\bin\Debug\net6.0\programCollections.dll
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\bin\Debug\net6.0\programCollections.pdb
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.dll
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\refint\programCollections.dll
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.pdb
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\ref\programCollections.dll
