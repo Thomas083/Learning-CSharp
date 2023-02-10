@@ -234,14 +234,16 @@ namespace programCollections
         static void TrisAndLinq()
         {
             var names = new List<string>() { "Thomas", "Jean", "Pierre", "Marine", "Jean-Christophe", "Michel", "Jack", "Sophie", "Maeva", "Marie", "Lucie", "Tiffanie", "Martin", "Vincent" };
-             
-             /*names.Sort();
-             
-            var names = new string[] { "Thomas", "Jean", "Pierre", "Marine", "Jean-Christophe", "Michel", "Jack", "Sophie", "Maeva", "Marie", "Lucie", "Tiffanie", "Martin", "Vincent" };
-*/
-            var nomsTries = names.OrderBy(e => e[e.Length-1]);
 
-            foreach(var name in nomsTries)
+            /*names.Sort();
+
+           var names = new string[] { "Thomas", "Jean", "Pierre", "Marine", "Jean-Christophe", "Michel", "Jack", "Sophie", "Maeva", "Marie", "Lucie", "Tiffanie", "Martin", "Vincent" };
+*/
+            names = names.OrderBy(e => e).ToList();
+
+            names = names.Where(e => e.Length > 6).ToList();
+
+            foreach(var name in names)
             {
                 Console.WriteLine(name);
             }
