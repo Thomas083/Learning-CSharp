@@ -230,13 +230,26 @@ namespace programCollections
             }
         }
 
+        static void TrisAndLinq()
+        {
+            var names = new List<string>() { "Thomas", "Jean", "Pierre", "Marine", "Jean-Christophe", "Michel", "Jack", "Sophie", "Maeva", "Marie", "Lucie", "Tiffanie", "Martin", "Vincent" };
+
+            names.Sort();
+
+            foreach(var name in names)
+            {
+                Console.WriteLine(name);
+            }
+        }
+
         static void Main(string[] args)
         {
             /*Array();
             List();
             ListOfList();
-            DictionaryLearn();*/
-            ForEachLoop();
+            DictionaryLearn();
+            ForEachLoop();*/
+            TrisAndLinq();
         }
     }
 }
