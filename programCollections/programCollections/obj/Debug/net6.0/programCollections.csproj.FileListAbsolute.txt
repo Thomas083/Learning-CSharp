@@ -13,3 +13,18 @@ C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\
 C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.pdb
 C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\programCollections.genruntimeconfig.cache
 C:\Users\Codecare\Documents\Formation\programCollections\programCollections\obj\Debug\net6.0\ref\programCollections.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.csproj.AssemblyReference.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.GeneratedMSBuildEditorConfig.editorconfig
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.AssemblyInfoInputs.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.AssemblyInfo.cs
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.csproj.CoreCompileInputs.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\refint\programCollections.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.pdb
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\bin\Debug\net6.0\programCollections.exe
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\bin\Debug\net6.0\programCollections.deps.json
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\bin\Debug\net6.0\programCollections.runtimeconfig.json
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\bin\Debug\net6.0\programCollections.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\bin\Debug\net6.0\programCollections.pdb
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\programCollections.genruntimeconfig.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programCollections\programCollections\obj\Debug\net6.0\ref\programCollections.dll

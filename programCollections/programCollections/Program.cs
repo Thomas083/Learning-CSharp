@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Linq;
+using System.Runtime.Serialization;
 
 namespace programCollections
 {
@@ -232,10 +233,15 @@ namespace programCollections
 
         static void TrisAndLinq()
         {
-            var names = new List<string>() { "Toto", "Jean", "Pierre", "Emilie", "Sophie", "Lucie", "Thomas", "Michelle", "Célia", "Benoit", "Vincent", "Jeanne", "Marion", "Maxence" };
+            var names = new List<string>() { "Thomas", "Jean", "Pierre", "Marine", "Jean-Christophe", "Michel", "Jack", "Sophie", "Maeva", "Marie", "Lucie", "Tiffanie", "Martin", "Vincent" };
 
-            /*names.Sort();*/
-            names.OrderBy
+            /*names.Sort();
+
+           var names = new string[] { "Thomas", "Jean", "Pierre", "Marine", "Jean-Christophe", "Michel", "Jack", "Sophie", "Maeva", "Marie", "Lucie", "Tiffanie", "Martin", "Vincent" };
+*/
+            names = names.OrderBy(e => e).ToList();
+
+            names = names.Where(e => e.Length > 6).ToList();
 
             foreach(var name in names)
             {
