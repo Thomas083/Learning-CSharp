@@ -4,23 +4,34 @@
     {
         static int nombreDePersonnes = 0;
 
-        public string nom;
-        int age;
-        string emploi;
+        public string nom { get; init; }
+        public int age { get; init; }
+        public string emploi { get; init; }
         int numeroPersonne;
 
-        public Personne(string nom, int age, string emploi) 
+        public Personne()
         {
-
             nombreDePersonnes++;
             this.numeroPersonne = nombreDePersonnes;
+        }
+        public Personne(string nom, int age, string emploi = null) : this()
+        {
+
             this.nom = nom;
             this.age = age;
             this.emploi = emploi;
         }
-        public Personne(string nom, int age) : this(nom,age,null)
-        {
+
+
+        /*public string GetNom()
+        { 
+            return nom; 
         }
+
+        public void SetNom(string value)
+        {
+            nom = value; 
+        }*/
 
         public void Show()
         {
@@ -64,21 +75,22 @@
 
             var personnes = new List<Personne>
             {
-                new Personne("Pierre", 30, "Développeur"),
-                new Personne("Paul", 35, "Professeur"),
-                new Personne("Jacque", 20, "Etudiant"),
-                new Personne("Julliette", 8),
+                new Personne { nom = "Pierre", age = 30, emploi = "Developpeur"},
+                new Personne { nom = "Paul", age = 35, emploi = "Professeur"},
+                new Personne { nom = "Jacque", age = 20, emploi = "Etudiant"},
+                new Personne { nom = "Julliette", age = 8},
+                new Personne {nom = "Thomas", age= 25, emploi= "Developpeur" }
             };
-            /*Personne firstPersonne = new Personne("Paul", 30, "Développeur");
-            Personne secondPersonne = new Personne("Paul", 35, "Professeur");*/
+            /* Personne secondPersonne = new Personne("Paul", 35, "Professeur");*/
             /* for(int i = 0; i < personnes.Count; i++)
              {
                  personnes[i].Show();
              }*/
 
+
             personnes = personnes.OrderBy(p => p.nom).ToList();
 
-           foreach (var personne in personnes)
+            foreach (var personne in personnes)
             {
                 personne.Show();
             }
