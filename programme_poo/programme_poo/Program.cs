@@ -31,19 +31,33 @@
         }*/
         static void Main(string[] args)
         {
-           /* var noms = new List<string> { "Pierre", "Paul", "Jacque"};
-            var ages = new List<int> { 30, 35, 20};
-            var emplois = new List<string> { "Développeur", "Professeur", "Etudiant"};
+            /* var noms = new List<string> { "Pierre", "Paul", "Jacque"};
+             var ages = new List<int> { 30, 35, 20};
+             var emplois = new List<string> { "Développeur", "Professeur", "Etudiant"};
 
-            for(int i = 0; i < noms.Count; i++)
+             for(int i = 0; i < noms.Count; i++)
+             {
+                 ShowInfoPeople(noms[i], ages[i], emplois[i]);
+             }*/
+
+
+            var personnes = new List<Personne>
             {
-                ShowInfoPeople(noms[i], ages[i], emplois[i]);
+                new Personne("Pierre", 30, "Développeur"),
+                new Personne("Paul", 35, "Professeur"),
+                new Personne("Jacque", 20, "Etudiant"),
+                new Personne("Julliette", 8, "CP"),
+            };
+            /*Personne firstPersonne = new Personne("Paul", 30, "Développeur");
+            Personne secondPersonne = new Personne("Paul", 35, "Professeur");*/
+           /* for(int i = 0; i < personnes.Count; i++)
+            {
+                personnes[i].Show();
             }*/
-
-            Personne firstPersonne = new Personne("Paul", 30, "Développeur");
-            Personne secondPersonne = new Personne("Paul", 35, "Professeur");
-            firstPersonne.Show();
-            secondPersonne.Show();
+           foreach (var personne in personnes)
+            {
+                personne.Show();
+            }
         }
     }
 }
