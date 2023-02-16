@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.exe
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.deps.json
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.dll
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.pdb
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.dll
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\refint\programme_poo.dll
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.pdb
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\ref\programme_poo.dll
