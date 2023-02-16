@@ -6,8 +6,8 @@ namespace programme_poo
     {
         static int nombreDePersonnes = 0;
 
-        protected string nom;
-        protected int age;
+        public string nom { get; init; }
+        public int age { get;  init; }
         string emploi;
         protected int numeroPersonne;
 
@@ -123,6 +123,7 @@ namespace programme_poo
                 new Personne ("Thomas", 25, "Developpeur" )
             };
 
+            personnes = personnes.Where(p => p.nom[0]=='J' && p.age > 18).ToList();
 
             foreach (var personne in personnes)
             {
