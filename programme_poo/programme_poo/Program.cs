@@ -2,7 +2,7 @@
 {
     class Personne
     {
-        string nom;
+        public string nom;
         int age;
         string emploi;
 
@@ -50,10 +50,13 @@
             };
             /*Personne firstPersonne = new Personne("Paul", 30, "Développeur");
             Personne secondPersonne = new Personne("Paul", 35, "Professeur");*/
-           /* for(int i = 0; i < personnes.Count; i++)
-            {
-                personnes[i].Show();
-            }*/
+            /* for(int i = 0; i < personnes.Count; i++)
+             {
+                 personnes[i].Show();
+             }*/
+
+            personnes = personnes.OrderBy(p => p.nom).ToList();
+
            foreach (var personne in personnes)
             {
                 personne.Show();
