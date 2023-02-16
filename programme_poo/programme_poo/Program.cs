@@ -2,12 +2,18 @@
 {
     class Personne
     {
+        public static int nombreDePersonnes = 0;
+
         public string nom;
         int age;
         string emploi;
+        int numeroPersonne;
 
         public Personne(string nom, int age, string emploi) 
         {
+
+            nombreDePersonnes++;
+            this.numeroPersonne = nombreDePersonnes;
             this.nom = nom;
             this.age = age;
             this.emploi = emploi;
@@ -15,6 +21,7 @@
 
         public void Show()
         {
+            Console.WriteLine("PERSONNE N° " + numeroPersonne);
             Console.WriteLine("Nom : " + nom);
             Console.WriteLine(" AGE : " + age + " ans");
             Console.WriteLine(" EMPLOI : " + emploi);
@@ -61,6 +68,7 @@
             {
                 personne.Show();
             }
+            Console.WriteLine("Nombre de personne total : " + Personne.nombreDePersonnes);
         }
     }
 }
