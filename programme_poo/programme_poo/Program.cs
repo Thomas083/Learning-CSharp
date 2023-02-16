@@ -5,7 +5,20 @@
         static int nombreDePersonnes = 0;
 
         public string nom { get; init; }
-        public int age { get; init; }
+        int _age;
+        public int age { 
+            get 
+            { 
+                return _age;
+            }
+            set
+            {
+                if (value >= 0) 
+                {
+                    _age= value;                    
+                }
+            }
+            }
         public string emploi { get; init; }
         int numeroPersonne;
 
