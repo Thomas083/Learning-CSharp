@@ -1,56 +1,36 @@
-﻿namespace programme_poo
+﻿using programme_poo;
+
+namespace programme_poo
 {
     class Personne
     {
         static int nombreDePersonnes = 0;
 
-        public string nom { get; init; }
-        int _age;
-        public int age { 
-            get 
-            { 
-                return _age;
-            }
-            set
-            {
-                if (value >= 0) 
-                {
-                    _age= value;                    
-                }
-            }
-            }
-        public string emploi { get; init; }
-        int numeroPersonne;
+        protected string nom;
+        protected int age;
+        string emploi;
+        protected int numeroPersonne;
 
-        public Personne()
+        public Personne(string nom, int age, string emploi = null) 
         {
             nombreDePersonnes++;
             this.numeroPersonne = nombreDePersonnes;
-        }
-        public Personne(string nom, int age, string emploi = null) : this()
-        {
 
             this.nom = nom;
             this.age = age;
             this.emploi = emploi;
         }
 
-
-        /*public string GetNom()
-        { 
-            return nom; 
-        }
-
-        public void SetNom(string value)
-        {
-            nom = value; 
-        }*/
-
-        public void Show()
+        protected void ShowNameAndAge()
         {
             Console.WriteLine("PERSONNE N° " + numeroPersonne);
             Console.WriteLine("Nom : " + nom);
             Console.WriteLine(" AGE : " + age + " ans");
+        }
+
+        public virtual void Show()
+        {
+            ShowNameAndAge();
             if(emploi!=null)
             {
                 Console.WriteLine(" EMPLOI : " + emploi);
@@ -66,42 +46,83 @@
         }
     }
 
+    class Etudiant : Personne
+    {
+        protected string infoEtudes;
+        public Personne professeurPrincipal { get; init; }
+        public Etudiant(string nom, int age, string infoEtudes) : base(nom, age) 
+        { 
+            this.infoEtudes = infoEtudes;
+        }
+
+        protected void ShowProfesseurPrincipal()
+        {
+            if (professeurPrincipal != null)
+            {
+                Console.WriteLine(" Le professeur principal est : ");
+
+                professeurPrincipal.Show();
+            }
+        }
+        public override void Show()
+        {
+            ShowNameAndAge();
+            Console.WriteLine(" Etudiant en " + infoEtudes);
+            ShowProfesseurPrincipal();
+        }
+    }
+
+    class Enfant : Etudiant
+    {
+        public string classeEcole { get; init; }
+        Dictionary<string, float> notes = new Dictionary<string, float>();
+        public Enfant(string nom, int age, string classeEcole, Dictionary<string, float> notes): base (nom, age, null)
+        {
+            this.classeEcole= classeEcole;
+            this.notes = notes;
+        }
+
+        public override void Show()
+        {
+            ShowNameAndAge();
+            Console.WriteLine(" Enfant en classe de : " + classeEcole);
+            if(notes != null && notes.Count > 0)
+            {
+                Console.WriteLine(" Notes moyenne : ");
+                foreach(KeyValuePair<string, float> note in notes)
+                {
+                    Console.WriteLine("   " + note.Key + " : " + note.Value + " / 10" );
+                }
+            }
+            ShowProfesseurPrincipal();
+        }
+    }
+
     internal class Program
     {
-        /*static void ShowInfoPeople(string nom, int age, string emploi)
-        {
-            Console.WriteLine("Nom : " + nom);
-            Console.WriteLine(" AGE : " + age + " ans");
-            Console.WriteLine("EMPLOI : " + emploi);
-        }*/
         static void Main(string[] args)
         {
-            /* var noms = new List<string> { "Pierre", "Paul", "Jacque"};
-             var ages = new List<int> { 30, 35, 20};
-             var emplois = new List<string> { "Développeur", "Professeur", "Etudiant"};
-
-             for(int i = 0; i < noms.Count; i++)
-             {
-                 ShowInfoPeople(noms[i], ages[i], emplois[i]);
-             }*/
-
-
             var personnes = new List<Personne>
             {
-                new Personne { nom = "Pierre", age = 30, emploi = "Developpeur"},
-                new Personne { nom = "Paul", age = 35, emploi = "Professeur"},
-                new Personne { nom = "Jacque", age = 20, emploi = "Etudiant"},
-                new Personne { nom = "Julliette", age = 8},
-                new Personne {nom = "Thomas", age= 25, emploi= "Developpeur" }
+                new Personne ("Pierre", 30, "Developpeur"),
+                
+                new Etudiant("Jacque", 20, "école d'ingénieur en informatique")
+                {
+                    professeurPrincipal = new Personne("Paul", 35, "Professeur"),
+                },
+                new Enfant ("Julliette", 8, "CP", new Dictionary<string, float> {
+                    {"Math", 2f },
+                    {"Geo", 8f },
+                    {"Histoire", 6f },
+                    {"Français", 7f },
+                    {"Anglais", 4f },
+                })
+                {
+                    professeurPrincipal = new Personne("Jean", 42, "Professeur des écoles")
+                },
+                new Personne ("Thomas", 25, "Developpeur" )
             };
-            /* Personne secondPersonne = new Personne("Paul", 35, "Professeur");*/
-            /* for(int i = 0; i < personnes.Count; i++)
-             {
-                 personnes[i].Show();
-             }*/
 
-
-            personnes = personnes.OrderBy(p => p.nom).ToList();
 
             foreach (var personne in personnes)
             {
