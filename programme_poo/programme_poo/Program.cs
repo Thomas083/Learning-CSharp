@@ -2,7 +2,7 @@
 {
     class Personne
     {
-        public static int nombreDePersonnes = 0;
+        static int nombreDePersonnes = 0;
 
         public string nom;
         int age;
@@ -18,13 +18,27 @@
             this.age = age;
             this.emploi = emploi;
         }
+        public Personne(string nom, int age) : this(nom,age,null)
+        {
+        }
 
         public void Show()
         {
             Console.WriteLine("PERSONNE N° " + numeroPersonne);
             Console.WriteLine("Nom : " + nom);
             Console.WriteLine(" AGE : " + age + " ans");
-            Console.WriteLine(" EMPLOI : " + emploi);
+            if(emploi!=null)
+            {
+                Console.WriteLine(" EMPLOI : " + emploi);
+            } else
+            {
+                Console.WriteLine(" Aucun emploi spécifié");
+            }
+        }
+
+        public static void ShowNumberOfPersonnes()
+        {
+            Console.WriteLine("Nombre de personne total : " + nombreDePersonnes);
         }
     }
 
@@ -53,7 +67,7 @@
                 new Personne("Pierre", 30, "Développeur"),
                 new Personne("Paul", 35, "Professeur"),
                 new Personne("Jacque", 20, "Etudiant"),
-                new Personne("Julliette", 8, "CP"),
+                new Personne("Julliette", 8),
             };
             /*Personne firstPersonne = new Personne("Paul", 30, "Développeur");
             Personne secondPersonne = new Personne("Paul", 35, "Professeur");*/
@@ -68,7 +82,8 @@
             {
                 personne.Show();
             }
-            Console.WriteLine("Nombre de personne total : " + Personne.nombreDePersonnes);
+
+            Personne.ShowNumberOfPersonnes();
         }
     }
 }
