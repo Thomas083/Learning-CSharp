@@ -2,3 +2,15 @@
 *.vsidx
 
 *.cache
+
+*.dll
+
+programme_poo/programme_poo/bin/Debug/net6.0/
+
+*.pdb
+
+*.props
+
+*.json
+
+*.v2

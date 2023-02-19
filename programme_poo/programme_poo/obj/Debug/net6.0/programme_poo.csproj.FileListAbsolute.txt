@@ -13,3 +13,18 @@ C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6
 C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.pdb
 C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.genruntimeconfig.cache
 C:\Users\Codecare\Documents\Formation\programme_poo\programme_poo\obj\Debug\net6.0\ref\programme_poo.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.exe
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.deps.json
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.runtimeconfig.json
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\bin\Debug\net6.0\programme_poo.pdb
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.csproj.AssemblyReference.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.GeneratedMSBuildEditorConfig.editorconfig
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.AssemblyInfoInputs.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.AssemblyInfo.cs
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.csproj.CoreCompileInputs.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\refint\programme_poo.dll
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.pdb
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\programme_poo.genruntimeconfig.cache
+N:\Travail epitech\Personnal work\Learning C#\Formation\Thomas083\Learning-CSharp\programme_poo\programme_poo\obj\Debug\net6.0\ref\programme_poo.dll

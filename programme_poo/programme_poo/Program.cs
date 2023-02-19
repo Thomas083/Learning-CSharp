@@ -2,7 +2,7 @@
 
 namespace programme_poo
 {
-    class Personne
+    class Personne : IAffichable
     {
         static int nombreDePersonnes = 0;
 
@@ -98,11 +98,36 @@ namespace programme_poo
         }
     }
 
+
+    class TableDeMultiplication : IAffichable
+    {
+        int number;
+        public TableDeMultiplication(int number)
+        {
+            this.number = number;
+        }
+
+        public void Show()
+        {
+            Console.WriteLine("Table de multiplication de : " + number);
+
+            for(int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine(i + " x " + number + " = " + (i*number));
+            }
+        }
+    }
+
+    interface IAffichable
+    {
+        void Show();
+    }
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            var personnes = new List<Personne>
+            var elements = new List<IAffichable>
             {
                 new Personne ("Pierre", 30, "Developpeur"),
                 
@@ -120,17 +145,19 @@ namespace programme_poo
                 {
                     professeurPrincipal = new Personne("Jean", 42, "Professeur des écoles")
                 },
-                new Personne ("Thomas", 25, "Developpeur" )
+                new Personne ("Thomas", 25, "Developpeur" ),
+                new TableDeMultiplication(2)
             };
 
-            personnes = personnes.Where(p => p.nom[0]=='J' && p.age > 18).ToList();
-
-            foreach (var personne in personnes)
+            foreach (var element in elements)
             {
-                personne.Show();
+                element.Show();
             }
 
             Personne.ShowNumberOfPersonnes();
+
+          /*  var table2 = new TableDeMultiplication(2);
+            table2.show();*/
         }
     }
 }
