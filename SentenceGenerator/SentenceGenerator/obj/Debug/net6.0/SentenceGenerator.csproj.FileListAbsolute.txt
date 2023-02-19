@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\bin\Debug\net6.0\SentenceGenerator.exe
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\bin\Debug\net6.0\SentenceGenerator.deps.json
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\bin\Debug\net6.0\SentenceGenerator.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\bin\Debug\net6.0\SentenceGenerator.dll
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\bin\Debug\net6.0\SentenceGenerator.pdb
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.dll
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\refint\SentenceGenerator.dll
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.pdb
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\SentenceGenerator.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\SentenceGenerator\SentenceGenerator\obj\Debug\net6.0\ref\SentenceGenerator.dll

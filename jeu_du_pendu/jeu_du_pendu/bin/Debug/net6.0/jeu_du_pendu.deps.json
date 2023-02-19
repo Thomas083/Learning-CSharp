@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "jeu_du_pendu/1.0.0": {
+        "runtime": {
+          "jeu_du_pendu.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "jeu_du_pendu/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
