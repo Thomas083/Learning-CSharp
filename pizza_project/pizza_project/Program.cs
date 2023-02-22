@@ -8,7 +8,7 @@ namespace pizza_project
         {
             string nom;
             public float prix { get; private set; }
-            List<string> ingredients;
+            public List<string> ingredients { get; private set; }
             public bool vegetarienne { get; private set; }
 
             public Pizza(string nom, float prix, List<string> ingredients, bool vegetarienne = false)
@@ -72,7 +72,7 @@ namespace pizza_project
             {
                 pizza.Afficher();
             }
-            Console.WriteLine();;
+            Console.WriteLine();
             Console.WriteLine("Les différente pizza Végétarienne : ");
 
             var pizzasVege = pizzas.Where(p => p.vegetarienne).ToList();
@@ -80,6 +80,23 @@ namespace pizza_project
             {
                 pizza.Afficher();
             }
+
+            Console.WriteLine();
+            Console.WriteLine("Les différente pizza base tomate");
+            var pizzasTomato = pizzas.Where(p => p.ingredients.Where(i => i.ToLower().Contains("tomate")).ToList().Count > 0).ToList();
+            foreach(var pizza in pizzasTomato)
+            {
+                pizza.Afficher();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Les différente pizza base crème");
+            var pizzasCreme = pizzas.Where(p => p.ingredients.Where(i => i.ToLower().Contains("crème")).ToList().Count >0).ToList();
+            foreach(var pizza in pizzasCreme)
+            {
+                pizza.Afficher();
+            }
+
 
             foreach (var pizza in pizzas)
             {
