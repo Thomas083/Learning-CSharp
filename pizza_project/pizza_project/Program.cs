@@ -62,12 +62,28 @@ namespace pizza_project
 
             };
 
-            pizzas = pizzas.OrderByDescending(p => p.prix).ToList();
+            //pizzas = pizzas.OrderByDescending(p => p.prix).ToList();
+            Pizza pizzaPrixMin = pizzas[0];
+            Pizza pizzaPrixMax = pizzas[0];
+
 
             foreach(var pizza in pizzas)
             {
                 pizza.Afficher();
+                if (pizzaPrixMin.prix > pizza.prix)
+                {
+                    pizzaPrixMin = pizza;
+                }
+                if (pizzaPrixMax.prix < pizza.prix)
+                {
+                    pizzaPrixMax = pizza;
+                }
             }
+            Console.WriteLine();
+            Console.WriteLine("La pizza la moins cher est : " );
+            pizzaPrixMin?.Afficher();
+            Console.WriteLine("La pizza la plus cher est : " );
+            pizzaPrixMax?.Afficher();
         }
     }
 }
