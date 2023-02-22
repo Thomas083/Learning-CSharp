@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
 
 namespace pizza_project
 {
@@ -6,9 +7,9 @@ namespace pizza_project
     {
         public class Pizza
         {
-            string nom;
-            public float prix { get; private set; }
-            public List<string> ingredients { get; private set; }
+            protected string nom { get; set; }
+            public float prix { get; protected set; }
+            public List<string> ingredients { get; protected set; }
             public bool vegetarienne { get; private set; }
 
             public Pizza(string nom, float prix, List<string> ingredients, bool vegetarienne = false)
@@ -51,6 +52,38 @@ namespace pizza_project
             }
 
         }
+
+        class PizzaPersonnalisee : Pizza
+        {
+            static int nbPizzasPersonnalisee;
+            public PizzaPersonnalisee() : base("Personnalisee", 5, null, false)
+            {
+                nbPizzasPersonnalisee++;
+                nom = "Personnalisee" + nbPizzasPersonnalisee;
+                ingredients = new List<string>();
+                while(true)
+                {
+                    Console.Write("Rentrez un ingrédient pour la pizza personnalisée " + nbPizzasPersonnalisee + " (ENTER pour terminer) : ");
+                    var ingredient = Console.ReadLine();
+                    if(string.IsNullOrWhiteSpace(ingredient))
+                    {
+                        break;
+                    }
+                    if(ingredients.Contains(ingredient))
+                    {
+                        Console.WriteLine("ERREUR, cet ingrédiens est déjà dans la pizza");
+                    }
+                    else
+                    {
+                        ingredients.Add(ingredient);
+                        Console.WriteLine(string.Join(", ", ingredients));
+                    }
+                        Console.WriteLine();
+                }
+                prix = 5 + ingredients.Count * 1.5f; 
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -64,7 +97,8 @@ namespace pizza_project
                 new Pizza("Margherita", 8f,new List<string>() {"Mozzarella", "Parmesan", "Huile d'olive", "Thym", "Laurier", "Concentré de tomate"}, true),
                 new Pizza("calzone", 12f, new List<string>() {"Mozzarela", "Parmesan", "Jambon", "Huile d'Olive", "SAuce tomate"}),
                 new Pizza("Reine", 9.5f, new List<string>() {"Gruyère","Champignon de paris", "Jambon", "Sauce tomate"}),
-
+                new PizzaPersonnalisee(),
+                new PizzaPersonnalisee(),
             };
 
             //pizzas = pizzas.OrderByDescending(p => p.prix).ToList();
