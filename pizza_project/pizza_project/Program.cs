@@ -21,14 +21,10 @@ namespace pizza_project
 
             public void Afficher()
             {
-                var ingredientsAfficher = new List<string>() ;
                 string badgeVegetarienne = vegetarienne ? " (V)" : "";
                 string nomAfficher = FormatPremiereLettreMajuscules(nom);
+                var ingredientsAfficher = ingredients.Select(i => FormatPremiereLettreMajuscules(i)).ToList();
 
-                foreach(var ingredient in ingredients)
-                {
-                    ingredientsAfficher.Add(FormatPremiereLettreMajuscules(ingredient));
-                }
 
                 Console.WriteLine(nomAfficher + badgeVegetarienne + " - " + prix + "€");
                 Console.WriteLine(string.Join(", ", ingredientsAfficher));
