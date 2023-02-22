@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\bin\Debug\net6.0\pizza_project.exe
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\bin\Debug\net6.0\pizza_project.deps.json
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\bin\Debug\net6.0\pizza_project.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\bin\Debug\net6.0\pizza_project.dll
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\bin\Debug\net6.0\pizza_project.pdb
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.dll
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\refint\pizza_project.dll
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.pdb
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\ref\pizza_project.dll
