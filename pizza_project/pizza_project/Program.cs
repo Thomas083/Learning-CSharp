@@ -45,6 +45,11 @@ namespace pizza_project
                 return resultat;
             }
 
+            public bool ContientIngredient(string ingredient)
+            {
+                return ingredients.Where(i => i.ToLower().Contains(ingredient)).ToList().Count() > 0;
+            }
+
         }
         static void Main(string[] args)
         {
@@ -83,7 +88,7 @@ namespace pizza_project
 
             Console.WriteLine();
             Console.WriteLine("Les différente pizza base tomate");
-            var pizzasTomato = pizzas.Where(p => p.ingredients.Where(i => i.ToLower().Contains("tomate")).ToList().Count > 0).ToList();
+            var pizzasTomato = pizzas.Where(p => p.ContientIngredient("tomate")).ToList();
             foreach(var pizza in pizzasTomato)
             {
                 pizza.Afficher();
@@ -91,7 +96,7 @@ namespace pizza_project
 
             Console.WriteLine();
             Console.WriteLine("Les différente pizza base crème");
-            var pizzasCreme = pizzas.Where(p => p.ingredients.Where(i => i.ToLower().Contains("crème")).ToList().Count >0).ToList();
+            var pizzasCreme = pizzas.Where(p => p.ContientIngredient("crème")).ToList();
             foreach(var pizza in pizzasCreme)
             {
                 pizza.Afficher();
