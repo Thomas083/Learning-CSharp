@@ -29,7 +29,9 @@ namespace programme_fichier
             }
 
             StringBuilder text = new();
-            int nbLignes = 100000000;
+            int nbLignes = 50000000;
+
+            DateTime t1 = DateTime.Now;
 
             Console.WriteLine("Préparation des données...");
             for(int i = 0;i < nbLignes; i++)
@@ -40,6 +42,10 @@ namespace programme_fichier
             Console.WriteLine("Ecriture des données...");           
             File.WriteAllText(pathAndFile, text.ToString());
             Console.WriteLine("OK");
+            DateTime t2 = DateTime.Now;
+
+            var diff = (t2 - t1).TotalMilliseconds;
+            Console.WriteLine(diff);
             /*try
             {
                 string resultat = File.ReadAllText(pathAndFile);
