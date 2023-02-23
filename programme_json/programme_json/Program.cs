@@ -24,6 +24,10 @@ namespace programme_json
 
             string json = JsonConvert.SerializeObject(person);
             Console.WriteLine(json);
+            string jsonMichel = "{ \"nom\":\"Michel\",\"age\":45}";
+
+            Personne michel = JsonConvert.DeserializeObject<Personne>(jsonMichel);
+            michel.Afficher();
         }
     }
 }

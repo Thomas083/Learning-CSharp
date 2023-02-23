@@ -1,0 +1,17 @@
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\bin\Debug\net6.0\programme_json.exe
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\bin\Debug\net6.0\programme_json.deps.json
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\bin\Debug\net6.0\programme_json.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\bin\Debug\net6.0\programme_json.dll
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\bin\Debug\net6.0\programme_json.pdb
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.csproj.CopyComplete
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.dll
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\refint\programme_json.dll
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.pdb
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\programme_json.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\programme_json\programme_json\obj\Debug\net6.0\ref\programme_json.dll
