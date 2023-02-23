@@ -1,4 +1,6 @@
-﻿namespace programme_fichier
+﻿using System.Text;
+
+namespace programme_fichier
 {
     internal class Program
     {
@@ -26,16 +28,19 @@
                 Console.WriteLine("Le fichier n'existe pas, on va le crée");
             }
 
-            var names = new List<string>()
+            StringBuilder text = new();
+            int nbLignes = 100000000;
+
+            Console.WriteLine("Préparation des données...");
+            for(int i = 0;i < nbLignes; i++)
             {
-                "Jean",
-                "Pierre",
-                "Paul",
-                "Jacque",
-            };
-            File.WriteAllLines(pathAndFile, names);
-            File.AppendAllText(pathAndFile, "\nje rajoute un super text");
-            try
+                text.Append("Ligne " + i + " \n");
+            }
+            Console.WriteLine("OK");
+            Console.WriteLine("Ecriture des données...");           
+            File.WriteAllText(pathAndFile, text.ToString());
+            Console.WriteLine("OK");
+            /*try
             {
                 string resultat = File.ReadAllText(pathAndFile);
                 Console.WriteLine(resultat);
@@ -54,9 +59,9 @@
             {
                 Console.WriteLine("ERREUR : " + ex.Message);
             }
-            /*File.Copy(pathAndFile, pathAndFile2);
-            File.Delete(pathAndFile);*/
-            File.Move(pathAndFile, pathAndFile2);
+            *//*File.Copy(pathAndFile, pathAndFile2);
+            File.Delete(pathAndFile);*//*
+            File.Move(pathAndFile, pathAndFile2);*/
         }
     }
 }
