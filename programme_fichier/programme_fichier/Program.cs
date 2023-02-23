@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            File.WriteAllText("monFichier.txt", "Voici un super contenue pour mon super fichier texte");
         }
     }
 }

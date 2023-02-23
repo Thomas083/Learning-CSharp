@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\bin\Debug\net6.0\programme_fichier.exe
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\bin\Debug\net6.0\programme_fichier.deps.json
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\bin\Debug\net6.0\programme_fichier.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\bin\Debug\net6.0\programme_fichier.dll
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\bin\Debug\net6.0\programme_fichier.pdb
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.dll
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\refint\programme_fichier.dll
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.pdb
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\programme_fichier.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\programme_fichier\programme_fichier\obj\Debug\net6.0\ref\programme_fichier.dll
