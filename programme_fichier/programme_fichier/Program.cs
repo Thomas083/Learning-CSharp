@@ -5,9 +5,27 @@
         static void Main(string[] args)
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            path = path+"/nouveauDossier/";
+
             string fileName = "monFichier.txt";
+            string fileName2 = "monFichier2.txt";
             string pathAndFile = Path.Combine(path, fileName);
-            
+            string pathAndFile2 = Path.Combine(path, fileName2);
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+
+            if (File.Exists(pathAndFile))
+            {
+                Console.WriteLine("Le fichier existe déjà, on va écraser son contenue");
+            } 
+            else
+            {
+                Console.WriteLine("Le fichier n'existe pas, on va le crée");
+            }
+
             var names = new List<string>()
             {
                 "Jean",
@@ -36,6 +54,7 @@
             {
                 Console.WriteLine("ERREUR : " + ex.Message);
             }
+            File.Copy(pathAndFile, pathAndFile2);
         }
     }
 }
