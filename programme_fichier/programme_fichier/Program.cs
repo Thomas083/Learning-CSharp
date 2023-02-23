@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace programme_fichier
 {
@@ -27,7 +28,7 @@ namespace programme_fichier
             {
                 Console.WriteLine("Le fichier n'existe pas, on va le crée");
             }
-
+            /*//---------------------------------------------
             StringBuilder text = new();
             int nbLignes = 50000000;
 
@@ -44,8 +45,23 @@ namespace programme_fichier
             Console.WriteLine("OK");
             DateTime t2 = DateTime.Now;
 
-            var diff = (t2 - t1).TotalMilliseconds;
+            var diff = (int)((t2 - t1).TotalMilliseconds);
             Console.WriteLine(diff);
+            //------------------------------------------------*/
+            DateTime t1 = DateTime.Now;
+
+            using (var writeSteam = File.CreateText(pathAndFile))
+            {
+                int nbLignes = 50000000;
+                for (int i = 0; i < nbLignes; i++)
+                {
+                    writeSteam.Write("Ligne " + i + " \n");
+                }
+            }
+            DateTime t2 = DateTime.Now;
+            var diff = (int)((t2 - t1).TotalMilliseconds);
+            Console.WriteLine(diff);
+
             /*try
             {
                 string resultat = File.ReadAllText(pathAndFile);
