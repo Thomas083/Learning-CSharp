@@ -4,8 +4,10 @@
     {
         static void Main(string[] args)
         {
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             string fileName = "monFichier.txt";
-
+            string pathAndFile = Path.Combine(path, fileName);
+            
             var names = new List<string>()
             {
                 "Jean",
@@ -13,15 +15,14 @@
                 "Paul",
                 "Jacque",
             };
-            //File.WriteAllText("monFichier.txt", "Voici un super contenue pour mon super fichier texte");
-            File.AppendAllText(fileName, "\nje rajoute un super text");
-            File.WriteAllLines(fileName, names);
+            File.WriteAllLines(pathAndFile, names);
+            File.AppendAllText(pathAndFile, "\nje rajoute un super text");
             try
             {
-                string resultat = File.ReadAllText(fileName);
+                string resultat = File.ReadAllText(pathAndFile);
                 Console.WriteLine(resultat);
                 Console.WriteLine();
-                var allLine = File.ReadAllLines(fileName);
+                var allLine = File.ReadAllLines(pathAndFile);
                 for(int i = 0;i < allLine.Length; i++)
                 {
                     Console.WriteLine(allLine[i]);
