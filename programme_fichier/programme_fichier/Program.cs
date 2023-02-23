@@ -50,17 +50,29 @@ namespace programme_fichier
             //------------------------------------------------*/
             DateTime t1 = DateTime.Now;
 
-            using (var writeSteam = File.CreateText(pathAndFile))
+            using (var writeStream = File.CreateText(pathAndFile))
             {
                 int nbLignes = 50000000;
                 for (int i = 0; i < nbLignes; i++)
                 {
-                    writeSteam.Write("Ligne " + i + " \n");
+                    writeStream.Write("Ligne " + i + " \n");
                 }
             }
             DateTime t2 = DateTime.Now;
             var diff = (int)((t2 - t1).TotalMilliseconds);
             Console.WriteLine(diff);
+
+
+            using (var readStream = File.OpenText(pathAndFile))
+            {
+                while (true)
+                {
+                    var line = readStream.ReadLine();
+                    if (line == null) break;
+                    Console.WriteLine(line);
+
+                }
+            }
 
             /*try
             {
