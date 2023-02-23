@@ -20,6 +20,12 @@
             {
                 string resultat = File.ReadAllText(fileName);
                 Console.WriteLine(resultat);
+                Console.WriteLine();
+                var allLine = File.ReadAllLines(fileName);
+                for(int i = 0;i < allLine.Length; i++)
+                {
+                    Console.WriteLine(allLine[i]);
+                }
             } 
             catch (FileNotFoundException ex)
             {
