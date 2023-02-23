@@ -55,6 +55,7 @@
                 Console.WriteLine("ERREUR : " + ex.Message);
             }
             File.Copy(pathAndFile, pathAndFile2);
+            File.Delete(pathAndFile);
         }
     }
 }
