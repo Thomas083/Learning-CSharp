@@ -5,8 +5,16 @@ namespace programme_json
 
     class Personne
     {
-        public string nom;
-        public int age;
+        public string nom { get; private set; }
+        public int age { get; private set; }
+        public bool majeur { get; private set; }
+
+        public Personne(string nom, int age, bool majeur)
+        {
+            this.nom = nom;
+            this.age = age;
+            this.majeur = majeur;
+        }
 
         public void Afficher ()
         {
@@ -17,17 +25,20 @@ namespace programme_json
     {
         static void Main(string[] args)
         {
-            Personne person = new Personne();
-            person.nom = "Thomas";
-            person.age = 25;
-            person.Afficher();
+            var personnes = new List<Personne>()
+            {
+                new Personne("Pierre", 20, true),
+                new Personne("Paul", 17, false),
+                new Personne("Jacque", 45, true),
+                new Personne("Claire", 18, true),
+                new Personne("Sophie", 12, false),
+                new Personne("Anne", 62, true),
+            };
 
-            string json = JsonConvert.SerializeObject(person);
+            var json = JsonConvert.SerializeObject(personnes);
             Console.WriteLine(json);
-            string jsonMichel = "{ \"nom\":\"Michel\",\"age\":45}";
 
-            Personne michel = JsonConvert.DeserializeObject<Personne>(jsonMichel);
-            michel.Afficher();
+            File.WriteAllText("Personnes.txt", json);
         }
     }
 }
