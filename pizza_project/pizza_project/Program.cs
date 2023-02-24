@@ -12,7 +12,7 @@ namespace pizza_project
             public List<string> ingredients { get; protected set; }
             public bool vegetarienne { get; private set; }
 
-            public Pizza(string nom, float prix, List<string> ingredients, bool vegetarienne = false)
+            public Pizza(string nom, float prix, bool vegetarienne, List<string> ingredients)
             {
                 this.nom = nom ?? throw new ArgumentNullException(nameof(nom));
                 this.prix = prix;
@@ -56,7 +56,7 @@ namespace pizza_project
         class PizzaPersonnalisee : Pizza
         {
             static int nbPizzasPersonnalisee;
-            public PizzaPersonnalisee() : base("Personnalisee", 5, null, false)
+            public PizzaPersonnalisee() : base("Personnalisee", 5, false, null)
             {
                 nbPizzasPersonnalisee++;
                 nom = "Personnalisee" + nbPizzasPersonnalisee;
@@ -89,14 +89,14 @@ namespace pizza_project
             Console.OutputEncoding = Encoding.UTF8;
             var pizzas = new List<Pizza>()
             {
-                new Pizza("4 frommage", 11.5f,new List<string>() {"bleu", "Mozzarella", "Cheddar", "Compté", "Coulis de tomates"} , true),
-                new Pizza("carnivore", 13.5f, new List<string>() {"Emmental", "piment", "Steack haché", "Concentré de tomates"}) ,
-                new Pizza("HawAienne", 10.5f, new List < string >() {"Curry", "Escalope dE poulet", "Maïs", "ananas", "Patrika", "parmesan", "Huile de pépin de raisin", "Tomate"}, true),
-                new Pizza("Indienne", 10.5f, new List<string>(){"Poivron", "curry", "Fromage râpé", "Huile d'olive", "Lait de coco", "cheddar", "Escalopes de poulet", "Crème fraîche"}),
-                new Pizza("MeXicaine", 13f, new List<string>() {"Maïs", "Piment vert", "échalote", "Mozzarella", "Piment de cayenne", "Chair à saucisse", "coulis de tomates"}),
-                new Pizza("Margherita", 8f,new List<string>() {"Mozzarella", "Parmesan", "Huile d'olive", "Thym", "Laurier", "Concentré de tomate"}, true),
-                new Pizza("calzone", 12f, new List<string>() {"Mozzarela", "Parmesan", "Jambon", "Huile d'Olive", "SAuce tomate"}),
-                new Pizza("Reine", 9.5f, new List<string>() {"Gruyère","Champignon de paris", "Jambon", "Sauce tomate"}),
+                new Pizza("4 frommage", 11.5f, true,new List<string>() {"bleu", "Mozzarella", "Cheddar", "Compté", "Coulis de tomates"}),
+                new Pizza("carnivore", 13.5f, false, new List<string>() {"Emmental", "piment", "Steack haché", "Concentré de tomates"}),
+                new Pizza("HawAienne", 10.5f, true, new List < string >() {"Curry", "Escalope dE poulet", "Maïs", "ananas", "Patrika", "parmesan", "Huile de pépin de raisin", "Tomate"}),
+                new Pizza("Indienne", 10.5f, false, new List<string>(){"Poivron", "curry", "Fromage râpé", "Huile d'olive", "Lait de coco", "cheddar", "Escalopes de poulet", "Crème fraîche"}),
+                new Pizza("MeXicaine", 13f, false, new List<string>() {"Maïs", "Piment vert", "échalote", "Mozzarella", "Piment de cayenne", "Chair à saucisse", "coulis de tomates"}),
+                new Pizza("Margherita", 8f, true, new List<string>() {"Mozzarella", "Parmesan", "Huile d'olive", "Thym", "Laurier", "Concentré de tomate"}),
+                new Pizza("calzone", 12f, false, new List<string>() {"Mozzarela", "Parmesan", "Jambon", "Huile d'Olive", "SAuce tomate"}),
+                new Pizza("Reine", 9.5f, false, new List<string>() {"Gruyère","Champignon de paris", "Jambon", "Sauce tomate"}),
                 new PizzaPersonnalisee(),
                 new PizzaPersonnalisee(),
             };
