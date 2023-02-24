@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\bin\Debug\net6.0\programme_reseau.exe
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\bin\Debug\net6.0\programme_reseau.deps.json
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\bin\Debug\net6.0\programme_reseau.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\bin\Debug\net6.0\programme_reseau.dll
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\bin\Debug\net6.0\programme_reseau.pdb
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.dll
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\refint\programme_reseau.dll
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.pdb
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\programme_reseau.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\programme_reseau\programme_reseau\obj\Debug\net6.0\ref\programme_reseau.dll
