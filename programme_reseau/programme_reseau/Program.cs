@@ -16,8 +16,16 @@ namespace programme_reseau
             }
             catch (WebException ex)
             {
-                var statusCode = ((HttpWebResponse)ex.Response).StatusCode;
-                Console.WriteLine("ERREUR RESEAU : " + statusCode);
+                if (ex.Response !=null)
+                {
+                    var statusCode = ((HttpWebResponse)ex.Response).StatusCode;
+                    Console.WriteLine("ERREUR RESEAU : " + statusCode);
+                }
+                else
+                {
+                    Console.WriteLine("ERREUR RESEAU : "+ ex.Message);
+                }
+
             }
 
         }
