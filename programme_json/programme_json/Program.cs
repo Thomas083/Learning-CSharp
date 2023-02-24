@@ -25,7 +25,7 @@ namespace programme_json
     {
         static void Main(string[] args)
         {
-            var personnes = new List<Personne>()
+            /*var personnes = new List<Personne>()
             {
                 new Personne("Pierre", 20, true),
                 new Personne("Paul", 17, false),
@@ -38,7 +38,15 @@ namespace programme_json
             var json = JsonConvert.SerializeObject(personnes);
             Console.WriteLine(json);
 
-            File.WriteAllText("Personnes.txt", json);
+            File.WriteAllText("Personnes.txt", json);*/
+
+            string json = File.ReadAllText("Personnes.txt");
+            var personnes = JsonConvert.DeserializeObject<List<Personne>>(json);
+
+            foreach(var personne in personnes)
+            {
+                personne.Afficher();
+            }
         }
     }
 }
