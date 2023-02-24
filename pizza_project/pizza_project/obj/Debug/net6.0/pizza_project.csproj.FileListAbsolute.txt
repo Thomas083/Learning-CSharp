@@ -13,3 +13,5 @@ C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6
 C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.pdb
 C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.genruntimeconfig.cache
 C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\ref\pizza_project.dll
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Codecare\Documents\Formation\pizza_project\pizza_project\obj\Debug\net6.0\pizza_project.csproj.CopyComplete

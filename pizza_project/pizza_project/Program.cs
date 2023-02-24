@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace pizza_project
@@ -97,9 +98,10 @@ namespace pizza_project
                 new Pizza("Margherita", 8f, true, new List<string>() {"Mozzarella", "Parmesan", "Huile d'olive", "Thym", "Laurier", "Concentré de tomate"}),
                 new Pizza("calzone", 12f, false, new List<string>() {"Mozzarela", "Parmesan", "Jambon", "Huile d'Olive", "SAuce tomate"}),
                 new Pizza("Reine", 9.5f, false, new List<string>() {"Gruyère","Champignon de paris", "Jambon", "Sauce tomate"}),
-                new PizzaPersonnalisee(),
-                new PizzaPersonnalisee(),
             };
+
+            var json = JsonConvert.SerializeObject(pizzas);
+            Console.WriteLine(json);
 
             //pizzas = pizzas.OrderByDescending(p => p.prix).ToList();
             Pizza pizzaPrixMin = pizzas[0];
