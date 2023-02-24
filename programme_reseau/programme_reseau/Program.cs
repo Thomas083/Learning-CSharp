@@ -6,13 +6,14 @@ namespace programme_reseau
     {
         static void Main(string[] args)
         {
-            string url = "https://codeavecjonathan.com/res/exempsle.html";
+            string url = "https://codeavecjonathan.com/res/papillon.jpg";
 
             var webClient = new WebClient();
             try
             {
-                string reponse = webClient.DownloadString(url);
-                Console.WriteLine(reponse);
+                webClient.DownloadFile(url,"papillon.jpg");
+                
+                Console.WriteLine("téléchargement terminé");
             }
             catch (WebException ex)
             {
