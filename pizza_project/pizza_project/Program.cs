@@ -137,8 +137,17 @@ namespace pizza_project
         static List<Pizza> GetPizzaFromUrl(string url)
         {
             var webClient = new WebClient();
-            string json = webClient.DownloadString(url);
             List<Pizza> pizzas = null;
+            string json = null;
+            try
+            {
+                json = webClient.DownloadString(url);
+            }
+            catch
+            {
+                Console.WriteLine("ERREUR : l'url n'est pas bonne");
+            }
+            
 
             try
             {
@@ -161,10 +170,12 @@ namespace pizza_project
             // https://codeavecjonathan.com/res/pizzas2.json
             //var pizzas = GetPizzasFromFile(filename);
             var pizzas = GetPizzaFromUrl(url);
-
-            foreach(var pizza in pizzas)
+            if (pizzas != null)
             {
-                pizza.Afficher();
+                foreach (var pizza in pizzas)
+                {
+                    pizza.Afficher();
+                }
             }
         }
     }
