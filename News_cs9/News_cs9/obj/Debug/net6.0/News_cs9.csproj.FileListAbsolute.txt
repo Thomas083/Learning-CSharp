@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\bin\Debug\net6.0\News_cs9.exe
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\bin\Debug\net6.0\News_cs9.deps.json
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\bin\Debug\net6.0\News_cs9.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\bin\Debug\net6.0\News_cs9.dll
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\bin\Debug\net6.0\News_cs9.pdb
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.dll
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\refint\News_cs9.dll
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.pdb
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\News_cs9.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\News_cs9\News_cs9\obj\Debug\net6.0\ref\News_cs9.dll
