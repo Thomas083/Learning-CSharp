@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Net;
 using System.Text;
 
 namespace pizza_project
@@ -132,13 +133,34 @@ namespace pizza_project
             var json = JsonConvert.SerializeObject(pizzas);
             File.WriteAllText("Pizzas.json", json);
         }
+
+        static List<Pizza> GetPizzaFromUrl(string url)
+        {
+            var webClient = new WebClient();
+            string json = webClient.DownloadString(url);
+            List<Pizza> pizzas = null;
+
+            try
+            {
+                pizzas = JsonConvert.DeserializeObject<List<Pizza>>(json);
+            }
+            catch
+            {
+                Console.WriteLine("ERREUR : les données json ne sont pas valdies");
+                return null;
+            }
+            return pizzas;
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             string filename = "Pizzas.json";
+            string url = "https://codeavecjonathan.com/res/pizzas2.json";
             //var pizzas = GetPizzasFromCode();
             //GenerateJsonFile(pizzas, filename)
-            var pizzas = GetPizzasFromFile(filename);
+            // https://codeavecjonathan.com/res/pizzas2.json
+            //var pizzas = GetPizzasFromFile(filename);
+            var pizzas = GetPizzaFromUrl(url);
 
             foreach(var pizza in pizzas)
             {
