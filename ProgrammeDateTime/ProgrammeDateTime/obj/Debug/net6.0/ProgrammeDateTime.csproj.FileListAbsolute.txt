@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\bin\Debug\net6.0\ProgrammeDateTime.exe
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\bin\Debug\net6.0\ProgrammeDateTime.deps.json
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\bin\Debug\net6.0\ProgrammeDateTime.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\bin\Debug\net6.0\ProgrammeDateTime.dll
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\bin\Debug\net6.0\ProgrammeDateTime.pdb
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.dll
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\refint\ProgrammeDateTime.dll
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.pdb
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ProgrammeDateTime.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\ProgrammeDateTime\ProgrammeDateTime\obj\Debug\net6.0\ref\ProgrammeDateTime.dll
