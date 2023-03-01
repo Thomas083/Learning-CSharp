@@ -1,6 +1,26 @@
 ﻿namespace News_cs9
 {
-    class Personne
+    struct PersonneStruct
+    {
+        public string nom { get; init; }
+        public int age { get; init; }
+
+        public void Show()
+        {
+            Console.WriteLine("Nom : " + nom + " Age : " + age + "ans");
+        }
+    }
+    record PersonneRecord
+    {
+        public string nom { get; init; }
+        public int age { get; init; }
+
+        public void Show()
+        {
+            Console.WriteLine("Nom : " + nom + " Age : " + age + "ans");
+        }
+    }
+    class PersonneClass
     {
         public string nom { get; init; }
         public int age { get; init; }
@@ -14,15 +34,10 @@
     {
         static void Main(string[] args)
         {
-            var firstPerson = new Personne { nom ="Thomas", age = 25 };
-            var secondPerson = new Personne { nom ="Maxence", age = 22 };
+            var firstPerson = new PersonneRecord { nom ="Thomas", age = 25 };
+            var secondPerson = firstPerson;
 
-            firstPerson.Show();
-            Console.WriteLine("Hello, World!");
-            foreach(var arg in args)
-            {
-                Console.WriteLine(arg);
-            }
+            Console.WriteLine(firstPerson.Equals(secondPerson));
         }
     }
 }
