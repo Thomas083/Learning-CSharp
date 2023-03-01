@@ -88,10 +88,28 @@ namespace pizza_project
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            var filename = "Pizzas.json";
+            string json = null;
+            List<Pizza> pizzas = null;
+            try
+            {
+                json = File.ReadAllText(filename);
+            }
+            catch
+            {
+                Console.WriteLine("ERREUR De lecture du fichier : " + filename);
+                return;
+            }
 
-            string json = File.ReadAllText("Pizzas.json");
-
-            var pizzas = JsonConvert.DeserializeObject<List<Pizza>>(json);
+            try
+            {
+                pizzas = JsonConvert.DeserializeObject<List<Pizza>>(json);
+            }
+            catch
+            {
+                Console.WriteLine("ERREUR : les données json ne sont pas valdies");
+                return;
+            }
 
             foreach(var pizza in pizzas)
             {
