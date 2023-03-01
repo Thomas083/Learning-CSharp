@@ -4,120 +4,90 @@ using System.Text;
 
 namespace pizza_project
 {
+    public class Pizza
+    {
+        public string nom { get; set; }
+        public float prix { get; protected set; }
+        public List<string> ingredients { get; protected set; }
+        public bool vegetarienne { get; private set; }
+
+        public Pizza(string nom, float prix, bool vegetarienne, List<string> ingredients)
+        {
+            this.nom = nom ?? throw new ArgumentNullException(nameof(nom));
+            this.prix = prix;
+            this.ingredients = ingredients ?? throw new ArgumentNullException(nameof(ingredients));
+            this.vegetarienne = vegetarienne;
+        }
+
+        public void Afficher()
+        {
+            string badgeVegetarienne = vegetarienne ? " (V)" : "";
+            string nomAfficher = FormatPremiereLettreMajuscules(nom);
+            var ingredientsAfficher = ingredients.Select(i => FormatPremiereLettreMajuscules(i)).ToList();
+
+
+            Console.WriteLine(nomAfficher + badgeVegetarienne + " - " + prix + "€");
+            Console.WriteLine(string.Join(", ", ingredientsAfficher));
+            Console.WriteLine();
+        }
+
+        private static string FormatPremiereLettreMajuscules( string s)
+        {
+
+            if(string.IsNullOrEmpty(s))
+                return s;
+
+            string minuscules = s.ToLower();
+            string majuscules = s.ToUpper();
+
+            string resultat = majuscules[0] + minuscules[1..];
+
+            return resultat;
+        }
+
+        public bool ContientIngredient(string ingredient)
+        {
+            return ingredients.Where(i => i.ToLower().Contains(ingredient)).ToList().Count() > 0;
+        }
+
+    }
+
+    class PizzaPersonnalisee : Pizza
+    {
+        static int nbPizzasPersonnalisee;
+        public PizzaPersonnalisee() : base("Personnalisee", 5, false, null)
+        {
+            nbPizzasPersonnalisee++;
+            nom = "Personnalisee" + nbPizzasPersonnalisee;
+            ingredients = new List<string>();
+            while(true)
+            {
+                Console.Write("Rentrez un ingrédient pour la pizza personnalisée " + nbPizzasPersonnalisee + " (ENTER pour terminer) : ");
+                var ingredient = Console.ReadLine();
+                if(string.IsNullOrWhiteSpace(ingredient))
+                {
+                    break;
+                }
+                if(ingredients.Contains(ingredient))
+                {
+                    Console.WriteLine("ERREUR, cet ingrédiens est déjà dans la pizza");
+                }
+                else
+                {
+                    ingredients.Add(ingredient);
+                    Console.WriteLine(string.Join(", ", ingredients));
+                }
+                    Console.WriteLine();
+            }
+            prix = 5 + ingredients.Count * 1.5f; 
+        }
+    }
+
     internal class Program
     {
-        public class Pizza
+        static List<Pizza> GetPizzasFromCode()
         {
-            public string nom { get; set; }
-            public float prix { get; protected set; }
-            public List<string> ingredients { get; protected set; }
-            public bool vegetarienne { get; private set; }
-
-            public Pizza(string nom, float prix, bool vegetarienne, List<string> ingredients)
-            {
-                this.nom = nom ?? throw new ArgumentNullException(nameof(nom));
-                this.prix = prix;
-                this.ingredients = ingredients ?? throw new ArgumentNullException(nameof(ingredients));
-                this.vegetarienne = vegetarienne;
-            }
-
-            public void Afficher()
-            {
-                string badgeVegetarienne = vegetarienne ? " (V)" : "";
-                string nomAfficher = FormatPremiereLettreMajuscules(nom);
-                var ingredientsAfficher = ingredients.Select(i => FormatPremiereLettreMajuscules(i)).ToList();
-
-
-                Console.WriteLine(nomAfficher + badgeVegetarienne + " - " + prix + "€");
-                Console.WriteLine(string.Join(", ", ingredientsAfficher));
-                Console.WriteLine();
-            }
-
-            private static string FormatPremiereLettreMajuscules( string s)
-            {
-
-                if(string.IsNullOrEmpty(s))
-                    return s;
-
-                string minuscules = s.ToLower();
-                string majuscules = s.ToUpper();
-
-                string resultat = majuscules[0] + minuscules[1..];
-
-                return resultat;
-            }
-
-            public bool ContientIngredient(string ingredient)
-            {
-                return ingredients.Where(i => i.ToLower().Contains(ingredient)).ToList().Count() > 0;
-            }
-
-        }
-
-        class PizzaPersonnalisee : Pizza
-        {
-            static int nbPizzasPersonnalisee;
-            public PizzaPersonnalisee() : base("Personnalisee", 5, false, null)
-            {
-                nbPizzasPersonnalisee++;
-                nom = "Personnalisee" + nbPizzasPersonnalisee;
-                ingredients = new List<string>();
-                while(true)
-                {
-                    Console.Write("Rentrez un ingrédient pour la pizza personnalisée " + nbPizzasPersonnalisee + " (ENTER pour terminer) : ");
-                    var ingredient = Console.ReadLine();
-                    if(string.IsNullOrWhiteSpace(ingredient))
-                    {
-                        break;
-                    }
-                    if(ingredients.Contains(ingredient))
-                    {
-                        Console.WriteLine("ERREUR, cet ingrédiens est déjà dans la pizza");
-                    }
-                    else
-                    {
-                        ingredients.Add(ingredient);
-                        Console.WriteLine(string.Join(", ", ingredients));
-                    }
-                        Console.WriteLine();
-                }
-                prix = 5 + ingredients.Count * 1.5f; 
-            }
-        }
-
-        static void Main(string[] args)
-        {
-            Console.OutputEncoding = Encoding.UTF8;
-            var filename = "Pizzas.json";
-            string json = null;
-            List<Pizza> pizzas = null;
-            try
-            {
-                json = File.ReadAllText(filename);
-            }
-            catch
-            {
-                Console.WriteLine("ERREUR De lecture du fichier : " + filename);
-                return;
-            }
-
-            try
-            {
-                pizzas = JsonConvert.DeserializeObject<List<Pizza>>(json);
-            }
-            catch
-            {
-                Console.WriteLine("ERREUR : les données json ne sont pas valdies");
-                return;
-            }
-
-            foreach(var pizza in pizzas)
-            {
-                pizza.Afficher();
-            }
-
-            // GENERATION DES DONNES
-           /* var pizzas = new List<Pizza>()
+            var pizzas = new List<Pizza>()
             {
                 new Pizza("4 frommage", 11.5f, true,new List<string>() {"bleu", "Mozzarella", "Cheddar", "Compté", "Coulis de tomates"}),
                 new Pizza("carnivore", 13.5f, false, new List<string>() {"Emmental", "piment", "Steack haché", "Concentré de tomates"}),
@@ -128,65 +98,52 @@ namespace pizza_project
                 new Pizza("calzone", 12f, false, new List<string>() {"Mozzarela", "Parmesan", "Jambon", "Huile d'Olive", "SAuce tomate"}),
                 new Pizza("Reine", 9.5f, false, new List<string>() {"Gruyère","Champignon de paris", "Jambon", "Sauce tomate"}),
             };
+            return pizzas;
+        }
 
+        static List<Pizza> GetPizzasFromFile(string filename)
+        {
+            string json = null;
+            List<Pizza> pizzas = null;
+            try
+            {
+                json = File.ReadAllText(filename);
+            }
+            catch
+            {
+                Console.WriteLine("ERREUR De lecture du fichier : " + filename);
+                return null;
+            }
+
+            try
+            {
+                pizzas = JsonConvert.DeserializeObject<List<Pizza>>(json);
+            }
+            catch
+            {
+                Console.WriteLine("ERREUR : les données json ne sont pas valdies");
+                return null;
+            }
+            return pizzas;
+        }
+
+        static void GenerateJsonFile(List<Pizza> pizzas, string filename)
+        {
             var json = JsonConvert.SerializeObject(pizzas);
-            Console.WriteLine(json);
             File.WriteAllText("Pizzas.json", json);
+        }
+        static void Main(string[] args)
+        {
+            Console.OutputEncoding = Encoding.UTF8;
+            string filename = "Pizzas.json";
+            //var pizzas = GetPizzasFromCode();
+            //GenerateJsonFile(pizzas, filename)
+            var pizzas = GetPizzasFromFile(filename);
 
-            //pizzas = pizzas.OrderByDescending(p => p.prix).ToList();
-            Pizza pizzaPrixMin = pizzas[0];
-            Pizza pizzaPrixMax = pizzas[0];
-
-            Console.WriteLine("Les différente pizza pas Végétarienne : ");
-            var pizzasNoVege = pizzas.Where(p => !p.vegetarienne).ToList();
-            foreach(var pizza in pizzasNoVege)
+            foreach(var pizza in pizzas)
             {
                 pizza.Afficher();
             }
-            Console.WriteLine();
-            Console.WriteLine("Les différente pizza Végétarienne : ");
-
-            var pizzasVege = pizzas.Where(p => p.vegetarienne).ToList();
-            foreach (var pizza in pizzasVege)
-            {
-                pizza.Afficher();
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Les différente pizza base tomate");
-            var pizzasTomato = pizzas.Where(p => p.ContientIngredient("tomate")).ToList();
-            foreach(var pizza in pizzasTomato)
-            {
-                pizza.Afficher();
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Les différente pizza base crème");
-            var pizzasCreme = pizzas.Where(p => p.ContientIngredient("crème")).ToList();
-            foreach(var pizza in pizzasCreme)
-            {
-                pizza.Afficher();
-            }
-
-
-            foreach (var pizza in pizzas)
-            {
-                if (pizzaPrixMin.prix > pizza.prix)
-                {
-                    pizzaPrixMin = pizza;
-                }
-                if (pizzaPrixMax.prix < pizza.prix)
-                {
-                    pizzaPrixMax = pizza;
-                }
-            }
-            Console.WriteLine();
-            Console.WriteLine("La pizza la moins cher est : ");
-            pizzaPrixMin?.Afficher();
-            Console.WriteLine("La pizza la plus cher est : ");
-            pizzaPrixMax?.Afficher();
-            Console.WriteLine();*/
-
         }
     }
 }
