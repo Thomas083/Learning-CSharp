@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\bin\Debug\net6.0\AsyncDelegate.exe
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\bin\Debug\net6.0\AsyncDelegate.deps.json
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\bin\Debug\net6.0\AsyncDelegate.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\bin\Debug\net6.0\AsyncDelegate.dll
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\bin\Debug\net6.0\AsyncDelegate.pdb
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.dll
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\refint\AsyncDelegate.dll
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.pdb
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\AsyncDelegate.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\AsyncDelegate\AsyncDelegate\obj\Debug\net6.0\ref\AsyncDelegate.dll
