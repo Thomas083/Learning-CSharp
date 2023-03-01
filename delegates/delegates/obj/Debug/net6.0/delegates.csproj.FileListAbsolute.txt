@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\delegates\delegates\bin\Debug\net6.0\delegates.exe
+C:\Users\Codecare\Documents\Formation\delegates\delegates\bin\Debug\net6.0\delegates.deps.json
+C:\Users\Codecare\Documents\Formation\delegates\delegates\bin\Debug\net6.0\delegates.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\delegates\delegates\bin\Debug\net6.0\delegates.dll
+C:\Users\Codecare\Documents\Formation\delegates\delegates\bin\Debug\net6.0\delegates.pdb
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.dll
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\refint\delegates.dll
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.pdb
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\delegates.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\delegates\delegates\obj\Debug\net6.0\ref\delegates.dll
