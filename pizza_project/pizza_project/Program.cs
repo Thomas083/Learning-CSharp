@@ -8,7 +8,7 @@ namespace pizza_project
     {
         public class Pizza
         {
-            protected string nom { get; set; }
+            public string nom { get; set; }
             public float prix { get; protected set; }
             public List<string> ingredients { get; protected set; }
             public bool vegetarienne { get; private set; }
@@ -88,7 +88,18 @@ namespace pizza_project
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            var pizzas = new List<Pizza>()
+
+            string json = File.ReadAllText("Pizzas.json");
+
+            var pizzas = JsonConvert.DeserializeObject<List<Pizza>>(json);
+
+            foreach(var pizza in pizzas)
+            {
+                pizza.Afficher();
+            }
+
+            // GENERATION DES DONNES
+           /* var pizzas = new List<Pizza>()
             {
                 new Pizza("4 frommage", 11.5f, true,new List<string>() {"bleu", "Mozzarella", "Cheddar", "Compté", "Coulis de tomates"}),
                 new Pizza("carnivore", 13.5f, false, new List<string>() {"Emmental", "piment", "Steack haché", "Concentré de tomates"}),
@@ -102,6 +113,7 @@ namespace pizza_project
 
             var json = JsonConvert.SerializeObject(pizzas);
             Console.WriteLine(json);
+            File.WriteAllText("Pizzas.json", json);
 
             //pizzas = pizzas.OrderByDescending(p => p.prix).ToList();
             Pizza pizzaPrixMin = pizzas[0];
@@ -155,7 +167,7 @@ namespace pizza_project
             pizzaPrixMin?.Afficher();
             Console.WriteLine("La pizza la plus cher est : ");
             pizzaPrixMax?.Afficher();
-            Console.WriteLine();
+            Console.WriteLine();*/
 
         }
     }
