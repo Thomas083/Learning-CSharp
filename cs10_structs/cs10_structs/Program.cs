@@ -12,7 +12,7 @@
             age = -1;
         }
     }
-    record struct PersonneRecord(string name, int age);
+    readonly record struct PersonneRecord(string name, int age);
     internal class Program
     {
         static void Main(string[] args)

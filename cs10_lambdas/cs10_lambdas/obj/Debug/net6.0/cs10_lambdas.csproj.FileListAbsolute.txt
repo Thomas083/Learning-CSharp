@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\bin\Debug\net6.0\cs10_lambdas.exe
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\bin\Debug\net6.0\cs10_lambdas.deps.json
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\bin\Debug\net6.0\cs10_lambdas.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\bin\Debug\net6.0\cs10_lambdas.dll
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\bin\Debug\net6.0\cs10_lambdas.pdb
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.dll
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\refint\cs10_lambdas.dll
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.pdb
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\cs10_lambdas.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\cs10_lambdas\cs10_lambdas\obj\Debug\net6.0\ref\cs10_lambdas.dll
