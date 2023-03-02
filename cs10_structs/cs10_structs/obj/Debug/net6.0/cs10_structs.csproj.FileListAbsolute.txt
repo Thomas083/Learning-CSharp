@@ -1,0 +1,15 @@
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\bin\Debug\net6.0\cs10_structs.exe
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\bin\Debug\net6.0\cs10_structs.deps.json
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\bin\Debug\net6.0\cs10_structs.runtimeconfig.json
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\bin\Debug\net6.0\cs10_structs.dll
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\bin\Debug\net6.0\cs10_structs.pdb
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.csproj.AssemblyReference.cache
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.AssemblyInfoInputs.cache
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.AssemblyInfo.cs
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.csproj.CoreCompileInputs.cache
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.dll
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\refint\cs10_structs.dll
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.pdb
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\cs10_structs.genruntimeconfig.cache
+C:\Users\Codecare\Documents\Formation\cs10_structs\cs10_structs\obj\Debug\net6.0\ref\cs10_structs.dll
