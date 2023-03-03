@@ -300,3 +300,5 @@ C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama\bin\Debug\net7.0\run
 C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama\obj\Debug\net7.0\pizza_mama.Properties.Resources.resources
+C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama\obj\Debug\net7.0\pizza_mama.csproj.GenerateResource.cache
