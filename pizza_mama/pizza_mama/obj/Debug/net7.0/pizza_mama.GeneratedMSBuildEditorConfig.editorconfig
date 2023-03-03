@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Pizzas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGl6emFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
