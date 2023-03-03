@@ -2,12 +2,12 @@
 @model pizza_mama.Pages.Admin.Pizzas.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Suppression";
 }
 
-<h1>Delete</h1>
+<h1>@ViewData["Title"]</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Êtes-vous sur de vouloir supprimer cet élément ?</h3>
 <div>
     <h4>Pizza</h4>
     <hr />
@@ -40,7 +40,7 @@
     
     <form method="post">
         <input type="hidden" asp-for="Pizza.PizzaID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Supprimer" class="btn btn-danger" /> |
+        <a asp-page="./Index">Retour au menu</a>
     </form>
 </div>

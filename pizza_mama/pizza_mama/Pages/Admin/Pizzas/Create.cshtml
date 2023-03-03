@@ -2,10 +2,10 @@
 @model pizza_mama.Pages.Admin.Pizzas.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Création";
 }
 
-<h1>Create</h1>
+<h1>@ViewData["Title"]</h1>
 
 <h4>Pizza</h4>
 <hr />
@@ -34,14 +34,14 @@
                 <span asp-validation-for="Pizza.ingredient" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Création" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="Index">Retour au menu</a>
 </div>
 
 @section Scripts {

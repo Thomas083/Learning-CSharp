@@ -7,7 +7,7 @@ namespace pizza_mama.Models
         public int PizzaID { get; set; }
         [Display(Name = "Nom")]
         public string name { get; set; }
-        [Display(Name = "Prix")]
+        [Display(Name = "Prix (€)")]
         public float price { get; set; }
         [Display(Name = "Végétarienne")]
         public bool vegetarian { get; set; }
