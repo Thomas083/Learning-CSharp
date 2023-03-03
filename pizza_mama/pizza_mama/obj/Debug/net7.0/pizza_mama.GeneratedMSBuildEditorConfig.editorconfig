@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Codecare\Documents\Formation\pizza_mama\pizza_mama
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Pizzas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGl6emFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Pizzas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGl6emFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Pizzas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGl6emFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Pizzas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGl6emFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Admin/Pizzas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUGl6emFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Codecare/Documents/Formation/pizza_mama/pizza_mama/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
