@@ -32,5 +32,11 @@ namespace pizza_mama.Pages.Admin
             }
             return Page();
         }
+
+        public async Task<IActionResult> OnGetLogout()
+        {
+            await HttpContext.SignOutAsync();
+            return Redirect("/Admin");
+        }
     }
 }
