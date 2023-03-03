@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,6 +11,7 @@ using pizza_mama.Models;
 
 namespace pizza_mama.Pages.Admin.Pizzas
 {
+    [Authorize]
     public class CreateModel : PageModel
     {
         private readonly pizza_mama.Data.DataContext _context;
