@@ -7,6 +7,15 @@
 
 <br />
 
+@if(Model.DisplayInvalidAccountMessage)
+{
+	<div class="alert alert-danger" role="alert">
+		ERREUR : Ce compte est invalide
+	</div>
+}
+
+<br />
+
 <form method="post">
 	<input type="text" name="username" placeholder="Login" />
 <br />
