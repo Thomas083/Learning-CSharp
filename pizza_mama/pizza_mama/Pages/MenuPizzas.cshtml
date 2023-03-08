@@ -1,0 +1,26 @@
+﻿@page
+@model pizza_mama.Pages.MenuPizzasModel
+@{
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="~/css/style.css" />
+        <title>Menu des pizzas</title>
+    </head>
+    <body>
+	    <a asp-page="index">
+            <img class="logo" src="~/images/small_logo.png" ></img>
+	    </a>
+        <div class="blockMenuTitle">
+            <h1 class="titleMenu">Les Pizzas</h1>
+        </div>
+        <ul>
+        @foreach(var pizza in Model.Pizza)
+        {
+            <li>@pizza.name - @pizza.price €</li>
+        }
+        </ul>
+    </body>
+</html>
+
