@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text.Json.Serialization;
 
@@ -19,8 +20,9 @@ namespace pizza_mama.Models
         [JsonIgnore]
         public string ingredients { get; set; }
 
+        [NotMapped]
         [JsonPropertyName("ingredients")]
-        public List<string> listeIngredients
+        public string[] listIngredients
         {
             get
             {
@@ -28,7 +30,7 @@ namespace pizza_mama.Models
                 {
                     return null;
                 } 
-                ingredients.Split(", ");
+                return ingredients.Split(", ");
             }
         }
     }
