@@ -6,12 +6,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <link rel="stylesheet" href="~/css/style.css" />
         <title>PizzaMama</title>
     </head>
-    <body>
-        <div class="text-center">
-            <h1 class="display-4">PizzaMama Accueil</h1>
-            <p> <a asp-page="MenuPizzas">Voir le menu des Pizzas</a>.</p>
+    <body class="homePage">
+        <div class="centered">
+            <img src="~/images/main_logo.png"></img>
+            <a class="homePage" asp-page="MenuPizzas">Voir le menu</a>
         </div>
     </body>
 </html>

@@ -1,18 +1,40 @@
 ﻿
 body {
     --main-color: #DD7835;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/menu_background.jpg") no-repeat center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/menu_background.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
     font-family: Arial;
     margin: 0;
     color: white;
 }
 
+    body.homePage {
+        background-image: url("/images/main_background.jpg");
+    }
+
+    a.homePage {
+        color: red;
+        font-size: 18px;
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+
 li {
     color: blue;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
