@@ -7,28 +7,29 @@ namespace pizza_project
 {
     public class Pizza
     {
-        public string nom { get; set; }
-        public float prix { get; protected set; }
+        public string name { get; set; }
+        public float price { get; protected set; }
         public List<string> ingredients { get; protected set; }
-        public bool vegetarienne { get; private set; }
+        public bool vegetarian { get; private set; }
 
-        public Pizza(string nom, float prix, bool vegetarienne, List<string> ingredients)
+        public Pizza(string name, float price, bool vegetarienne, List<string> ingredients)
         {
-            this.nom = nom ?? throw new ArgumentNullException(nameof(nom));
-            this.prix = prix;
+            this.name = name ?? throw new ArgumentNullException(nameof(name));
+            this.price = price;
             this.ingredients = ingredients ?? throw new ArgumentNullException(nameof(ingredients));
-            this.vegetarienne = vegetarienne;
+            this.vegetarian = vegetarian;
         }
 
         public void Afficher()
         {
-            string badgeVegetarienne = vegetarienne ? " (V)" : "";
-            string nomAfficher = FormatPremiereLettreMajuscules(nom);
-            var ingredientsAfficher = ingredients.Select(i => FormatPremiereLettreMajuscules(i)).ToList();
-
-
-            Console.WriteLine(nomAfficher + badgeVegetarienne + " - " + prix + "€");
-            Console.WriteLine(string.Join(", ", ingredientsAfficher));
+            string badgeVegetarienne = vegetarian ? " (V)" : "";
+            string nomAfficher = FormatPremiereLettreMajuscules(name);
+            Console.WriteLine(nomAfficher + badgeVegetarienne + " - " + price + "€");
+            if(ingredients != null)
+            {
+                var ingredientsAfficher = ingredients.Select(i => FormatPremiereLettreMajuscules(i)).ToList();            
+                Console.WriteLine(string.Join(", ", ingredientsAfficher));
+            }
             Console.WriteLine();
         }
 
@@ -59,7 +60,7 @@ namespace pizza_project
         public PizzaPersonnalisee() : base("Personnalisee", 5, false, null)
         {
             nbPizzasPersonnalisee++;
-            nom = "Personnalisee" + nbPizzasPersonnalisee;
+            name = "Personnalisee" + nbPizzasPersonnalisee;
             ingredients = new List<string>();
             while(true)
             {
@@ -80,7 +81,7 @@ namespace pizza_project
                 }
                     Console.WriteLine();
             }
-            prix = 5 + ingredients.Count * 1.5f; 
+            price = 5 + ingredients.Count * 1.5f; 
         }
     }
 
@@ -164,7 +165,7 @@ namespace pizza_project
         {
             Console.OutputEncoding = Encoding.UTF8;
             string filename = "Pizzas.json";
-            string url = "https://codeavecjonathan.com/res/pizzas2.json";
+            string url = "https://localhost:5001/api/getpizzas";
             //var pizzas = GetPizzasFromCode();
             //GenerateJsonFile(pizzas, filename)
             // https://codeavecjonathan.com/res/pizzas2.json
