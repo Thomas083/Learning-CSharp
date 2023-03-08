@@ -6,6 +6,7 @@
     background-size: cover;
     font-family:Arial;
     margin: 0;
+    color: white;
 }
 
 li {
@@ -17,11 +18,22 @@ li {
 }
 
 .titleMenu {
-    color: white;
     background-color:#DD7835;
     display: inline;
     padding:8px 22px
 }
 .blockMenuTitle {
     margin: 45px 0 50px 0;
+}
+
+.menu_list {
+    margin-left:50px;
+}
+
+.menu_list_item {
+    font-size:20px;
+    margin: 30px 0;
+}
+.menu_list_title {
+    font-weight: bold;
 }

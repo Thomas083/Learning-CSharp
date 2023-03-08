@@ -15,12 +15,14 @@
         <div class="blockMenuTitle">
             <h1 class="titleMenu">Les Pizzas</h1>
         </div>
-        <ul>
+        <div class="menu_list">
         @foreach(var pizza in Model.Pizza)
         {
-            <li>@pizza.name - @pizza.price €</li>
+            <div class="menu_list_item">
+                <span class="menu_list_item">@pizza.name</span>
+            </div>        
         }
-        </ul>
+        </div>
     </body>
 </html>
 
