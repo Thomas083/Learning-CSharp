@@ -8,7 +8,7 @@ namespace pizza_mama.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ApiController : ControllerBase
+    public class ApiController : Controller
     {
         
         // GET: api/GetPizzas
@@ -17,8 +17,8 @@ namespace pizza_mama.Controllers
 
         public IActionResult GetPizzas()
         {
-            var pizza = new Pizza() { name = "pizza test", price = 12, vegetarian = false, ingredient = "Sauce Tomate, Mozzarella, Jambon"};
-            return new string[] { "Pizza", "value2" };
+            var pizza = new Pizza() { name = "pizza test", price = 12, vegetarian = false, ingredients = "Sauce Tomate, Mozzarella, Jambon"};
+            return Json(pizza);
         }
     }
 }

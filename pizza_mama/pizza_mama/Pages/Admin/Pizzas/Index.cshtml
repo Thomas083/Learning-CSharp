@@ -23,7 +23,7 @@
                 @Html.DisplayNameFor(model => model.Pizza[0].vegetarian)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Pizza[0].ingredient)
+                @Html.DisplayNameFor(model => model.Pizza[0].ingredients)
             </th>
             <th></th>
         </tr>
@@ -41,7 +41,7 @@
                 @Html.DisplayFor(modelItem => item.vegetarian)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ingredient)
+                @Html.DisplayFor(modelItem => item.ingredients)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.PizzaID">Modifier</a> |
