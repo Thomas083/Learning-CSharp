@@ -1,7 +1,7 @@
 ﻿
 body {
     --main-color: #DD7835;
-    background: url("/images/menu_background.jpg") no-repeat center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/menu_background.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -35,23 +35,24 @@ li {
 .menu_list_item {
     font-size:20px;
     margin: 30px 0;
+    width: 40vw;
 }
-.menu_list_title {
+.menu_item_name {
     font-weight: bold;
 }
-.menu_list_price {
+.menu_item_price {
     color:var(--main-color);
     margin-left: 8px;
 }
 
-.menu_list_ingredient {
+.menu_item_ingredient {
     color: #D8D8D8;
     font-size: 14px;
     display: block;
     margin-top:4px;
 }
 
-.menu_list_veggie {
+.menu_item_veggie {
     color: black;
     background-color: var(--main-color);
     font-size: 9px;

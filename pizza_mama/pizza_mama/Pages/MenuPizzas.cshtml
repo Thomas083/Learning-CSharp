@@ -19,12 +19,12 @@
         @foreach(var pizza in Model.Pizza)
         {
             <div class="menu_list_item">
-                <span class="menu_list_item">@pizza.name</span>
-                <span class="menu_list_price">@String.Format("{0:0.00}", pizza.price) €</span>
-                <span class="menu_list_ingredient">@pizza.ingredient</span>
+                <span class="menu_item_name">@pizza.name</span>
+                <span class="menu_item_price">@String.Format("{0:0.00}", pizza.price) €</span>
+                <span class="menu_item_ingredient">@pizza.ingredient</span>
                 @if(pizza.vegetarian)
                 {
-                    <span class="menu_list_veggie">VÉGÉTARIENNE</span>
+                    <span class="menu_item_veggie">VÉGÉTARIENNE</span>
                 }
             </div>        
         }
