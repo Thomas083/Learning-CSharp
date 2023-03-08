@@ -1,10 +1,12 @@
-﻿body {
-    background : url("/images/menu_background.jpg") no-repeat center fixed;
+﻿
+body {
+    --main-color: #DD7835;
+    background: url("/images/menu_background.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family:Arial;
+    font-family: Arial;
     margin: 0;
     color: white;
 }
@@ -18,7 +20,7 @@ li {
 }
 
 .titleMenu {
-    background-color:#DD7835;
+    background-color:var(--main-color);
     display: inline;
     padding:8px 22px
 }
@@ -38,7 +40,7 @@ li {
     font-weight: bold;
 }
 .menu_list_price {
-    color:#DD7835;
+    color:var(--main-color);
     margin-left: 8px;
 }
 
@@ -47,4 +49,15 @@ li {
     font-size: 14px;
     display: block;
     margin-top:4px;
+}
+
+.menu_list_veggie {
+    color: black;
+    background-color: var(--main-color);
+    font-size: 9px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 8px;
+    margin-top: 6px;
+    display: inline-block;
 }
