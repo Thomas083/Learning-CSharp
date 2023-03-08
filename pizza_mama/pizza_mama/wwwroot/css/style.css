@@ -37,3 +37,14 @@ li {
 .menu_list_title {
     font-weight: bold;
 }
+.menu_list_price {
+    color:#DD7835;
+    margin-left: 8px;
+}
+
+.menu_list_ingredient {
+    color: #D8D8D8;
+    font-size: 14px;
+    display: block;
+    margin-top:4px;
+}
