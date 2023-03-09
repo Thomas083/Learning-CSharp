@@ -31,8 +31,12 @@ namespace pizza_mama
             {
                 options.LoginPath = "/Admin";
             });
+            /*services.AddDbContext<DataContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("DefaultConnectionSqlite")));*/
             services.AddDbContext<DataContext>(options =>
-                    options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+
             services.AddRazorPages();
             services.AddControllers();
         }

@@ -1081,3 +1081,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
+pizza_mama/pizza_mama/appsettings.json
+pizza_mama/pizza_mama/appsettings.json
